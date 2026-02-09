@@ -2,12 +2,647 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>resume-website</title>
+    <title>Elayabarathi M V - Resume Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+          "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.6;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm bg-red-500">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-gray-800">Elayabarathi M V</div>
+        <div class="flex gap-8">
+          <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium">
+            Home
+          </a>
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Skills
+          </a>
+          <a
+            href="#experience"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Experience
+          </a>
+          <a
+            href="#education"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Education
+          </a>
+          <a
+            href="#projects"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Projects
+          </a>
+          <a
+            href="#certifications"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Certifications
+          </a>
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-4">Elayabarathi M V</h1>
+        <p class="text-xl mb-8">Full Stack Developer</p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="resume.pdf"
+            download
+            class="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+          >
+            Download Resume
+          </a>
+          <a
+            href="#contact"
+            class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-700 transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          About Me
+        </h2>
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-gray-600 mb-6">
+            Web Developer with hands-on experience in full-stack web development
+            using HTML, CSS, JavaScript, React.js, Java, SQL, and REST APIs.
+            Experienced in building responsive, scalable web applications and
+            integrating frontend and backend systems.
+          </p>
+          <p class="text-gray-600">
+            Seeking a Web Developer role to contribute to high-quality software
+            development in a collaborative engineering team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Frontend Development
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                HTML
+              </span>
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                CSS
+              </span>
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                JavaScript
+              </span>
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                React.js
+              </span>
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                Tailwind CSS
+              </span>
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                Bootstrap
+              </span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Backend Development
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+              >
+                Java
+              </span>
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+              >
+                Python
+              </span>
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+              >
+                Flask
+              </span>
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+              >
+                REST APIs
+              </span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Databases & Tools
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                SQL
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                PostgreSQL
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                MongoDB
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                Git
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                GitHub
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                VS Code
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                Vercel
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                Netlify
+              </span>
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+              >
+                Render
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Work Experience
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-12">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Java Full Stack Developer Trainee
+                </h3>
+                <p class="text-gray-600">QSpiders</p>
+              </div>
+              <p class="text-blue-600 font-medium">August 2025 – Present</p>
+            </div>
+            <p class="text-gray-600">
+              Hands-on experience with full-stack web development, utilizing
+              React.js, Java, and SQL, with a strong focus on problem-solving
+              and application efficiency.
+            </p>
+          </div>
+          <div class="mb-12">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Software Developer Intern
+                </h3>
+                <p class="text-gray-600">Codnifyz</p>
+              </div>
+              <p class="text-blue-600 font-medium">
+                November 2025 – December 2025
+              </p>
+            </div>
+            <p class="text-gray-600">
+              Acquired hands-on experience in software development and
+              performance optimization, enhancing Java programming, debugging,
+              and problem-solving skills through real-world development tasks
+              and projects.
+            </p>
+          </div>
+          <div class="mb-12">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Full Stack Web Developer Trainee & Intern
+                </h3>
+                <p class="text-gray-600">Corizo</p>
+              </div>
+              <p class="text-blue-600 font-medium">
+                October 2024 – December 2024
+              </p>
+            </div>
+            <p class="text-gray-600">
+              Proficient in full-stack web development using HTML, CSS,
+              JavaScript, Bootstrap, MongoDB, and APIs, with a focus on dynamic,
+              responsive applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Education
+        </h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="mb-8">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Bachelors of Technology - Biotechnology
+                </h3>
+                <p class="text-gray-600">K S Rangasamy College of Technology</p>
+              </div>
+              <p class="text-blue-600 font-medium">June 2020 – May 2024</p>
+            </div>
+            <p class="text-gray-600">Namakkal, TamilNadu | 88.1%</p>
+          </div>
+          <div class="mb-8">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  HSC - Bio-Math
+                </h3>
+                <p class="text-gray-600">
+                  U R C Palaniammal Matric Hr Src School
+                </p>
+              </div>
+              <p class="text-blue-600 font-medium">June 2019 – May 2020</p>
+            </div>
+            <p class="text-gray-600">Erode, TamilNadu | 76.33%</p>
+          </div>
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">SSLC</h3>
+                <p class="text-gray-600">
+                  U R C Palaniammal Matric Hr Src School
+                </p>
+              </div>
+              <p class="text-blue-600 font-medium">June 2017 – May 2018</p>
+            </div>
+            <p class="text-gray-600">Erode, TamilNadu | 90.20%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Bamboo Blogs
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Developed a full-stack blogging platform with user authentication,
+              CRUD operations, and database integration. Implemented secure
+              login, post creation/editing, and persistent data storage.
+            </p>
+            <a
+              href="https://bamboo-blogs-sample.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 font-medium hover:text-blue-800"
+            >
+              Live Demo →
+            </a>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Professional Portfolio
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Designed and developed a responsive personal portfolio website to
+              showcase projects, technical skills, and professional profile.
+            </p>
+            <a
+              href="https://elayabarathimv-portfolio.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 font-medium hover:text-blue-800"
+            >
+              Live Demo →
+            </a>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Stellar AI Chatbot
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Implemented dynamic message handling, responsive UI, and reusable
+              React components for scalable frontend design.
+            </p>
+            <a
+              href="https://stellar-steel-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 font-medium hover:text-blue-800"
+            >
+              Live Demo →
+            </a>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Spotify Clone
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Developed a music streaming web application clone replicating core
+              Spotify UI and playback experience.
+            </p>
+            <a
+              href="https://spotify-clone-6rda.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 font-medium hover:text-blue-800"
+            >
+              Live Demo →
+            </a>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">
+              Panda eCommerce Store
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Built a full-featured eCommerce web application with product
+              listing, shopping cart, and user-friendly navigation.
+            </p>
+            <a
+              href="https://full-stack-ecommerce-h47u.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 font-medium hover:text-blue-800"
+            >
+              Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Certifications
+        </h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">React JS</h3>
+              <p class="text-gray-600">LetsUpgrade (2025)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                Tailwind CSS
+              </h3>
+              <p class="text-gray-600">LetsUpgrade (2025)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">HTML5</h3>
+              <p class="text-gray-600">Mimo (2024)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">CSS3</h3>
+              <p class="text-gray-600">Mimo (2024)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                JavaScript
+              </h3>
+              <p class="text-gray-600">Simplilearn (2026)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                Git & GitHub
+              </h3>
+              <p class="text-gray-600">LetsUpgrade (2025)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Contact Me
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="{2}"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Email</h4>
+                  <p class="text-gray-600">elayabarathimv@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="{2}"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Phone</h4>
+                  <p class="text-gray-600">+91 9842852121</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="{2}"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="{2}"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Location</h4>
+                  <p class="text-gray-600">Erode, Tamil Nadu, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Add smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add active state to navigation on scroll
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("text-blue-600");
+          link.classList.add("text-gray-600");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.remove("text-gray-600");
+            link.classList.add("text-blue-600");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
